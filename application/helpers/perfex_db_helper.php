@@ -1605,3 +1605,14 @@ function get_chargeback_revenue_year($userid=0){
     return $total->total;
 
 }
+
+function get_merchant_id(){
+
+    $ci = &get_instance();
+
+    $ci->db->where('userid',get_client_user_id());
+    $merchant = $ci->db->get('tblmerchants')->row();
+
+    return $merchant->id;
+
+}

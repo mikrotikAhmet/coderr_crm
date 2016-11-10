@@ -22,3 +22,6 @@ define('INVOICE_ATTACHMENTS_FOLDER',FCPATH . 'uploads/invoices' . '/');
 define('EXPENSE_ATTACHMENTS_FOLDER',FCPATH . 'uploads/expenses' . '/');
 define('LEAD_ATTACHMENTS_FOLDER',FCPATH . 'uploads/leads' . '/');
 /* Tables End */
+/* Tables End */
+define('_LIVE_URL','https://processor.macropay.net/gatewayv2/service');
+define('_TEST_URL','http://testprocessor.macropay.io/gatewayv2/service/');

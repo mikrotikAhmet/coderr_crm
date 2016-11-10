@@ -63,31 +63,56 @@ class Perfex_Base
 				'id'=>1,
 				'name'=>_l('customer_permission_invoice'),
 				'short_name'=>'invoices',
-				),
+			),
 
 			array(
 				'id'=>2,
 				'name'=>_l('customer_permission_estimate'),
 				'short_name'=>'estimates',
-				),
+			),
 
 			array(
 				'id'=>3,
 				'name'=>_l('customer_permission_contract'),
 				'short_name'=>'contracts',
-				),
+			),
 
 			array(
 				'id'=>4,
 				'name'=>_l('customer_permission_proposal'),
 				'short_name'=>'proposals',
-				),
+			),
 			array(
 				'id'=>5,
 				'name'=>_l('customer_permission_support'),
 				'short_name'=>'support',
-				),
-			);
+			),
+			array(
+				'id'=>6,
+				'name'=>"Gateway",
+				'short_name'=>'gateway',
+			),
+			array(
+				'id'=>7,
+				'name'=>'EWallet',
+				'short_name'=>'ewallet',
+			),
+			array(
+				'id'=>8,
+				'name'=>"Virtual Terminal",
+				'short_name'=>'terminal',
+			),
+			array(
+				'id'=>9,
+				'name'=>'Batch Terminal',
+				'short_name'=>'batch',
+			),
+			array(
+				'id'=>10,
+				'name'=>'Relay',
+				'short_name'=>'relay',
+			),
+		);
 
 		return do_action('get_customer_permissions',$permissions);
 

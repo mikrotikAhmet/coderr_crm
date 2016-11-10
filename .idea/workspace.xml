@@ -2,9 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4954d974-caa4-401d-a107-4ce598d36d69" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/3ds.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/3dsecure.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/background-globe-grey-79651a0b9f5ca4c2b994a541f7f053e6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/cancelled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/checkmark-png-28.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/ClientsORIGINAL.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/Terminal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/Transactions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/account_balance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/alerts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/balance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/batch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_failed_process.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/batch_list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_manage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_processor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_success.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_success_process.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_terminal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/client-report.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/clients.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/contract_attachments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/contracts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/customer_manage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/dashboard.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/estimatehtml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/estimatepdf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/estimates.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/failed.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/forgot_password.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/global.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/head.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/home.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/home_transaction_list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/invoicehtml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/invoicepdf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/invoices.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/jsbn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/jsbn2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/knowledge_base.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/knowledge_base_article.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/navigation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/open_ticket.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/paymentpdf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/payoutstatementpdf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/process.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/product_manage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/profile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/proposalpdf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/proposals.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/quick_info.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/register.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/reset_password.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/rsa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/rsa2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/scripts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/css/semite.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/helpers/semite_translator_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/account/setting.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/single_ticket.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/statementpdf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/stripe_payment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/success.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/successtmp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/survey_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/terminal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/tickets.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/top_stats.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/transaction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_home_chart.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/transactions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/viewproposal.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/plugins/ContentTools" afterPath="$PROJECT_DIR$/assets/plugins/ContentTools" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin/Affiliates.php" afterPath="$PROJECT_DIR$/application/controllers/admin/Affiliates.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/includes/customizer-sidebar.php" afterPath="$PROJECT_DIR$/application/views/admin/includes/customizer-sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Clients.php" afterPath="$PROJECT_DIR$/application/controllers/Clients.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/libraries/Perfex_base.php" afterPath="$PROJECT_DIR$/application/libraries/Perfex_base.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/autoload.php" afterPath="$PROJECT_DIR$/application/config/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/my_functions_helper.php" afterPath="$PROJECT_DIR$/application/helpers/my_functions_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/perfex_constants_helper.php" afterPath="$PROJECT_DIR$/application/helpers/perfex_constants_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" afterPath="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +108,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Affiliates.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/admin/Affiliates.php">
+      <file leaf-file-name="transaction_home_chart.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_home_chart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3361793">
-              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.76947707">
+              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -44,10 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/language/english/english_lang.php" />
-        <option value="$PROJECT_DIR$/application/controllers/admin/Misc.php" />
-        <option value="$PROJECT_DIR$/application/views/authentication/login_admin.php" />
-        <option value="$PROJECT_DIR$/assets/css/authentication.css" />
         <option value="$PROJECT_DIR$/application/views/admin/affiliates/manage.php" />
         <option value="$PROJECT_DIR$/application/views/admin/leads/lead.php" />
         <option value="$PROJECT_DIR$/application/views/admin/leads/kan-ban.php" />
@@ -64,7 +142,6 @@
         <option value="$PROJECT_DIR$/application/views/admin/affiliates/groups_manage.php" />
         <option value="$PROJECT_DIR$/application/views/admin/merchants/manage_merchant.php" />
         <option value="$PROJECT_DIR$/application/models/Processors_model.php" />
-        <option value="$PROJECT_DIR$/application/helpers/perfex_constants_helper.php" />
         <option value="$PROJECT_DIR$/application/models/Affiliates_model.php" />
         <option value="$PROJECT_DIR$/application/helpers/perfex_upload_helper.php" />
         <option value="$PROJECT_DIR$/application/views/admin/affiliates/attachments_template.php" />
@@ -76,21 +153,30 @@
         <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/application/views/admin/includes/scripts.php" />
         <option value="$PROJECT_DIR$/application/models/Merchants_model.php" />
-        <option value="$PROJECT_DIR$/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/application/views/admin/merchants/processor/payvision.php" />
         <option value="$PROJECT_DIR$/application/views/admin/merchants/processor/oculus.php" />
         <option value="$PROJECT_DIR$/application/views/admin/merchants/processor/noirepay.php" />
         <option value="$PROJECT_DIR$/application/helpers/perfex_sales_helper.php" />
-        <option value="$PROJECT_DIR$/application/helpers/my_functions_helper.php" />
         <option value="$PROJECT_DIR$/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/application/views/admin/merchants/transaction.php" />
         <option value="$PROJECT_DIR$/application/models/Transactions_model.php" />
         <option value="$PROJECT_DIR$/application/views/admin/merchants/merchant.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/Merchants.php" />
-        <option value="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" />
         <option value="$PROJECT_DIR$/application/views/admin/home.php" />
         <option value="$PROJECT_DIR$/application/views/admin/includes/customizer-sidebar.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin/Affiliates.php" />
+        <option value="$PROJECT_DIR$/application/libraries/Perfex_base.php" />
+        <option value="$PROJECT_DIR$/application/helpers/my_functions_helper.php" />
+        <option value="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" />
+        <option value="$PROJECT_DIR$/application/views/themes/semite/template_parts/top_stats.php" />
+        <option value="$PROJECT_DIR$/application/views/themes/semite/views/dashboard.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Clients.php" />
+        <option value="$PROJECT_DIR$/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/application/helpers/perfex_constants_helper.php" />
+        <option value="$PROJECT_DIR$/application/views/themes/semite/views/transaction.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Transactions.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Terminal.php" />
+        <option value="$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_home_chart.php" />
       </list>
     </option>
   </component>
@@ -134,6 +220,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -180,7 +267,115 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="semite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="semite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="semite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template_parts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -201,29 +396,24 @@
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../html/map.semitepayment.com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testprocessor" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/application/views/admin/merchants" />
-      <recent name="$PROJECT_DIR$/application/models" />
+      <recent name="$PROJECT_DIR$/application/controllers" />
       <recent name="$PROJECT_DIR$/application/helpers" />
-      <recent name="$PROJECT_DIR$/application/views/admin" />
-      <recent name="$PROJECT_DIR$/application/controllers/admin" />
+      <recent name="$PROJECT_DIR$/assets/themes" />
+      <recent name="$PROJECT_DIR$/application/views/themes" />
+      <recent name="$PROJECT_DIR$/application/views/admin/merchants" />
     </key>
   </component>
   <component name="RunManager">
@@ -307,111 +497,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/admin/affiliates/manage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9935966">
-          <caret line="71" column="30" selection-start-line="57" selection-start-column="28" selection-end-line="71" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/affiliates/modals/send_file_modal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/includes/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.905016">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0010673">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_constants_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17609392">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Clients_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6468647">
-          <caret line="645" column="1" selection-start-line="534" selection-start-column="3" selection-end-line="645" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_upload_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.708334">
-          <caret line="269" column="50" selection-start-line="269" selection-start-column="50" selection-end-line="269" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/admin/Clients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5384617">
-          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/affiliates/attachments_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.740741">
-          <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/clients/client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/affiliates/affiliate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09605123">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/semite_encryption_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32017076">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Download.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Cron.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22411953">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6478122">
@@ -451,13 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37566704">
           <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Affiliates_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2916666">
-          <caret line="341" column="4" selection-start-line="341" selection-start-column="4" selection-end-line="360" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -531,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6563501">
-          <caret line="89" column="213" selection-start-line="89" selection-start-column="213" selection-end-line="89" selection-end-column="213" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin/Currencies.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48025614">
@@ -601,24 +672,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Transactions_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76840985">
-          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/merchants/processor/noirepay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40021345">
           <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/my_functions_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8452508">
-          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -633,13 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47385272">
           <caret line="50" column="101" selection-start-line="50" selection-start-column="101" selection-end-line="50" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_db_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.125">
-          <caret line="1597" column="120" selection-start-line="1597" selection-start-column="120" selection-end-line="1597" selection-end-column="120" />
         </state>
       </provider>
     </entry>
@@ -661,6 +711,217 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3361793">
           <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/semite/views/account/setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/themes/semite/js/rsa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/Perfex_base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6958378">
+          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/semite/template_parts/quick_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_general_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34151548">
+          <caret line="129" column="9" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/semite/template_parts/top_stats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22411953">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/my_functions_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96798295">
+          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23432343">
+          <caret line="1148" column="118" selection-start-line="1148" selection-start-column="118" selection-end-line="1148" selection-end-column="118" />
+          <folding>
+            <marker date="1478803017223" expanded="true" signature="-1:-1" placeholder="UPDATE tblme..." />
+            <marker date="1478803017223" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbltransactions..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_db_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75987196">
+          <caret line="1608" column="9" selection-start-line="1608" selection-start-column="9" selection-end-line="1608" selection-end-column="26" />
+          <folding>
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..tbltransactions..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+            <marker date="1478797955278" expanded="true" signature="-1:-1" placeholder="SELECT SUM(s..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Affiliates_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/semite_translator_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67342585">
+          <caret line="89" column="151" selection-start-line="89" selection-start-column="151" selection-end-line="89" selection-end-column="151" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Transactions_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44823906">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_constants_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41622198">
+          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/semite/views/transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38527215">
+          <caret line="51" column="82" selection-start-line="51" selection-start-column="82" selection-end-line="51" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Transactions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43223053">
+          <caret line="87" column="68" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="68" />
+          <folding>
+            <marker date="1478806638388" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806638388" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806638388" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806638388" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806638388" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806638388" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Terminal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6723586">
+          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+          <folding>
+            <marker date="1478806866481" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806866481" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806866481" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806866481" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806866481" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478806866481" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/semite/views/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20811099">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_home_chart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76947707">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,27 @@
+body {
+    background: url('../images/background-globe-grey-79651a0b9f5ca4c2b994a541f7f053e6.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.navbar-default {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #0074a6;
+    line-height: 60px;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #000;
+    line-height: 60px;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: transparent;
+    color: #000;
+}

@@ -87,7 +87,7 @@ $autoload['drivers'] = array('session');
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url','file','form','perfex_action_hooks','perfex_general','semite_encryption','perfex_html','perfex_db','perfex_upload','perfex_sales','perfex_themes','perfex_constants','semite_utf8','my_functions');
+$autoload['helper'] = array('url','file','form','perfex_action_hooks','perfex_general','semite_encryption','perfex_html','perfex_db','semite_translator','perfex_upload','perfex_sales','perfex_themes','perfex_constants','semite_utf8','my_functions');
 
 /*
 | -------------------------------------------------------------------

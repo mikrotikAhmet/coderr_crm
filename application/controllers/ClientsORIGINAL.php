@@ -8,11 +8,6 @@ class Clients extends Clients_controller
     {
         parent::__construct();
         $this->form_validation->set_error_delimiters('<div class="alert alert-danger alert-validation">', '</div>');
-        $this->load->model('clients_model');
-        $this->load->model('merchants_model');
-        $this->load->model('transactions_model');
-
-        $this->load->library('currency','currency');
     }
 
     public function index()
@@ -23,10 +18,9 @@ class Clients extends Clients_controller
 
         $data['title'] = get_option('companyname');
         $this->data    = $data;
-        $this->view    = 'dashboard';
+        $this->view    = 'home';
         $this->layout();
     }
-
     public function tickets($status = false)
     {
 
@@ -783,29 +777,15 @@ public function profile()
         redirect(site_url('clients/login'));
     }
 
-    $this->db->where('userid',get_client_user_id());
-    $merchant = $this->db->get('tblmerchants')->row();
-
-    $data['merchant'] = $merchant;
-
     if ($this->input->post('profile')) {
-
         $this->form_validation->set_rules('firstname',_l('client_firstname'),'required');
         $this->form_validation->set_rules('lastname',_l('client_lastname'),'required');
-
          $custom_fields = get_custom_fields('customers',array('show_on_client_portal'=>1,'required'=>1));
          foreach($custom_fields as $field){
             $this->form_validation->set_rules('custom_fields['.$field['fieldto'].']['.$field['id'].']',$field['name'],'required');
         }
         if($this->form_validation->run() !== FALSE){
             $data = $this->input->post();
-
-            $this->db->query("UPDATE tblmerchants SET api_id = '".$data['api_id']."', secret_key = '".$data['secret_key']."' WHERE id = '".(int) $merchant->id."'");
-
-            unset($data['api_id']);
-            unset($data['secret_key']);
-            unset($data['processor']);
-
             // Unset the form indicator so we wont send it to the model
             unset($data['profile']);
             $success = $this->clients_model->update($data, get_client_user_id(),true);
@@ -1027,8 +1007,8 @@ public function client_email_exists($email = '')
         return false;
     }
 
-        return true;
-    }
+    return true;
+}
 }
 
     /**
@@ -1137,232 +1117,5 @@ public function client_email_exists($email = '')
 
             echo json_encode($chart);
         }
-    }
-
-    public function transaction_home_list(){
-
-        $json = array();
-
-
-        if($this->input->is_ajax_request()){
-
-            $transactions = $this->db->query("SELECT * FROM tbltransactions WHERE merchantid=".(int) get_merchant_id()." ORDER BY date_added DESC LIMIT 10")->result_array();
-
-            foreach ($transactions as $transaction) {
-                $this->db->where('userid',get_client_user_id());
-                $merchant =  $this->db->get('tblmerchants')->row();
-
-                $client = $this->clients_model->get(get_client_user_id());
-
-
-                $json['data'][] = array(
-                    'transactionid'=>$transaction['transactionid'],
-                    'type'=>$transaction['method'],
-                    'cardMask'=>$transaction['card'],
-                    'cardType'=>$transaction['type'],
-                    'amount'=>format_money($transaction['settlement'],$this->currency->getNameById($client->default_currency)),
-                    'status'=>format_trx_status($transaction['status']),
-                    '3ds'=>($transaction['enrolled'] ? ' <i class="text-success fa fa-lock"></i>' : ' <i class="text-warning fa fa-unlock"></i>'),
-                    'date_added'=>date('m/d/Y',strtotime($transaction['date_added'])),
-                );
-            }
-
-            echo json_encode($json);
-            die();
-        }
-
-    }
-
-    public function transaction_home_chart(){
-
-        if (is_client_logged_in()) {
-            $statuses = array(
-                0,
-                1
-            );
-            $chart    = array(
-                'labels' => array(
-                    'January',
-                    'February',
-                    'March',
-                    'April',
-                    'May',
-                    'June',
-                    'July',
-                    'August',
-                    'September',
-                    'October',
-                    'November',
-                    'December'
-                ),
-                'datasets' => array()
-            );
-            foreach ($statuses as $status) {
-
-                $months_report = $this->input->post('months_report');
-                if ($months_report != '') {
-                    $custom_date_select = '';
-                    if (is_numeric($months_report)) {
-                        $custom_date_select = 'date_added > DATE_SUB(now(), INTERVAL ' . $months_report . ' MONTH)';
-                    } else if ($months_report == 'custom') {
-
-                        $from_date = to_sql_date($this->input->post('report_from'));
-                        $to_date   = to_sql_date($this->input->post('report_to'));
-
-                        if ($from_date == $to_date) {
-                            $custom_date_select = 'date_added ="' . $from_date . '"';
-                        } else {
-                            $custom_date_select = '(date_added BETWEEN "' . $from_date . '" AND "' . $to_date . '")';
-                        }
-                    }
-                    $this->db->where($custom_date_select);
-                }
-
-                $merchatid = get_merchant_id();
-                $this->db->select('settlement as amount, date_added');
-                $this->db->from('tbltransactions');
-                $this->db->where('method IN("Payment","Capture")');
-                $this->db->where('merchantid', $merchatid);
-                $this->db->where('status', $status);
-
-//                $by_currency = $this->input->post('report_currency');
-//                if ($by_currency) {
-//                    $this->db->where('currency', $by_currency);
-//                }
-
-                $payments = $this->db->get()->result_array();
-
-                $data          = array();
-                $data['temp']  = $chart['labels'];
-                $data['total'] = array();
-
-                $i = 0;
-                foreach ($chart['labels'] as $month) {
-                    $data['temp'][$i] = array();
-                    foreach ($payments as $payment) {
-                        $_month = date('F', strtotime($payment['date_added']));
-                        if ($_month == $month) {
-                            $data['temp'][$i][] = money_format("%!^i", $payment['amount']);
-                        }
-                    }
-                    $data['total'][] = array_sum($data['temp'][$i]);
-                    $i++;
-                }
-
-                if ($status == 0) {
-                    $strokeColor = '#259b24';
-                    $borderColor = '#20861f';
-                } else if ($status == 1) {
-                    $strokeColor = '#ff6f00';
-                    $borderColor = '#e66400';
-                } else if ($status == 2) {
-                    $strokeColor = '#fc142b';
-                    $borderColor = '#fc2d42';
-                }
-
-                array_push($chart['datasets'], array(
-                    'label' => format_transaction_status($status, '', false, true),
-                    'fillColor' => 'rgba(151,187,205,0.2)',
-                    'strokeColor' => $strokeColor,
-                    'pointColor' => $strokeColor,
-                    'pointStrokeColor' => '#fff',
-                    'pointHighlightFill' => '#fff',
-                    'pointHighlightStroke' => $strokeColor,
-                    'data' => $data['total']
-                ));
-            }
-
-            echo json_encode($chart);
-            die();
-        }
-    }
-
-    public function account_balance(){
-
-        $json = array();
-
-
-        if($this->input->is_ajax_request()){
-
-            $this->db->where('userid',get_client_user_id());
-            $transactions = $this->db->get('tbltransactions')->result_array();
-
-            $totalFees = 0;
-            $refundVoidFee = 0;
-
-            foreach ($transactions as $transaction) {
-                $this->db->where('userid',get_client_user_id());
-                $merchant =  $this->db->get('tblmerchants')->row();
-
-                $client = $this->clients_model->get(get_client_user_id());
-
-
-                $processedAmount = $transaction['processedAmount'];
-
-                if ($transaction['type'] == 'Refund' || $transaction['type'] == 'Void'){
-
-                    $refundVoidFee = ($processedAmount * 10 ) / 100;
-                }
-
-                $totalFees = $transaction['transactionFee'] + $transaction['acquirerCommission'] + $transaction['processorCommission'] + $transaction['rollbackAmount'] + $refundVoidFee;
-
-                $netAmount = $processedAmount - $totalFees;
-
-                if ($transaction['type'] == 'Charge' || $transaction['type'] == 'Authorize'){
-
-                    $type = '<span class="fa fa-credit-card"> '.$transaction['type'].'</span>';
-
-                } elseif ($transaction['type'] == 'Refund') {
-
-                    $type = '<span class="fa fa-reply"> '.$transaction['type'].'</span>';
-
-                } elseif ($transaction['type'] == 'Void') {
-
-                    $type = '<span class="fa fa-close"> '.$transaction['type'].'</span>';
-                }
-
-                $json['data'][] = array(
-                    'transactionid'=>$transaction['transactionid'],
-                    'type'=>$type,
-                    'net'=>'<b>'.format_money($netAmount,$this->currency->getNameById($client->default_currency)).'</b>',
-                    'amount'=>format_money($processedAmount,$this->currency->getNameById($client->default_currency)),
-                    'fees'=>format_money($totalFees,$this->currency->getNameById($client->default_currency)),
-                    'description'=>$transaction['trackingCode'],
-                    'date_added'=>date('m/d/Y H:i:s',strtotime($transaction['date_added'])),
-                );
-            }
-
-            echo json_encode($json);
-            die();
-        }
-    }
-    public function balance(){
-
-
-
-        $data['title']  = 'Account Balance';
-        $this->data     = $data;
-        $this->view     = 'balance';
-        $this->layout();
-
-    }
-
-    /*
-     * Returns Api Access KYE & SECRET
-     * UUID::V2
-     */
-    public function api_access(){
-
-        if($this->input->is_ajax_request()) {
-            $data = $this->input->post();
-
-            $this->load->helper('perfex_uuid');
-
-            echo json_encode(array(
-                    'api_id'=>strtoupper(UUID::random_key(9,true,true)),
-                    'secret_key'=>strtoupper(UUID::v5('1546058f-5a25-4334-85ae-e68f2a44bbaf',UUID::random_key(9))))
-            );
-        }
-
     }
 }
