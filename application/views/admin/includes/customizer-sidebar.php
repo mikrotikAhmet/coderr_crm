@@ -84,7 +84,7 @@
 				</li>
 				<?php } ?>
 				<li>
-					<a href="http://www.macropay.net/documentations" target="_blank">Help</a>
+					<a href="http://www.coderr.net/documentations" target="_blank">Help</a>
 				</li>
 			</ul>
 		</div>

@@ -119,14 +119,19 @@ class Affiliates extends Admin_controller {
                 access_denied('manageAffiliates');
             }
 
+            $postData = $this->input->post();
+
+            unset($postData['file']);
+
             if($id == ''){
-                $id = $this->affiliates_model->add($this->input->post());
+
+                $id = $this->affiliates_model->add($postData);
                 if($id){
                     set_alert('success', _l('added_successfuly',_l('affiliate')));
                     redirect(admin_url('affiliates/affiliate/'.$id));
                 }
             } else {
-                $success = $this->affiliates_model->update($this->input->post(),$id);
+                $success = $this->affiliates_model->update($postData,$id);
                 if(is_array($success)){
                     if(isset($success['set_password_email_sent'])) {
                         set_alert('success', _l('set_password_email_sent_to_affiliate'));
