@@ -2,91 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4954d974-caa4-401d-a107-4ce598d36d69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/3ds.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/3dsecure.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/background-globe-grey-79651a0b9f5ca4c2b994a541f7f053e6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/cancelled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/images/checkmark-png-28.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/ClientsORIGINAL.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/Terminal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/Transactions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/account_balance.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/alerts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/balance.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/batch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_failed_process.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/batch_list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_manage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_processor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_success.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_success_process.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/batch_terminal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/client-report.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/clients.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/contract_attachments.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/contracts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/customer_manage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/dashboard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/estimatehtml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/estimatepdf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/estimates.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/failed.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/forgot_password.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/head.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/home.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/home_transaction_list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/invoicehtml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/invoicepdf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/invoices.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/jsbn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/jsbn2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/knowledge_base.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/knowledge_base_article.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/navigation.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/open_ticket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/paymentpdf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/payoutstatementpdf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/process.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/product_manage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/proposalpdf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/proposals.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/quick_info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/reset_password.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/rsa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/js/rsa2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/scripts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/css/semite.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/helpers/semite_translator_helper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/account/setting.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/single_ticket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/statementpdf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/stripe_payment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/themes/semite/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/success.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/successtmp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/survey_view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/terminal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/tickets.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/top_stats.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/transaction.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_home_chart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/transactions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/themes/semite/views/viewproposal.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/plugins/ContentTools" afterPath="$PROJECT_DIR$/assets/plugins/ContentTools" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Clients.php" afterPath="$PROJECT_DIR$/application/controllers/Clients.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/libraries/Perfex_base.php" afterPath="$PROJECT_DIR$/application/libraries/Perfex_base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/autoload.php" afterPath="$PROJECT_DIR$/application/config/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/my_functions_helper.php" afterPath="$PROJECT_DIR$/application/helpers/my_functions_helper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/perfex_constants_helper.php" afterPath="$PROJECT_DIR$/application/helpers/perfex_constants_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" afterPath="$PROJECT_DIR$/application/helpers/perfex_db_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="transaction_home_chart.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_home_chart.php">
+      <file leaf-file-name="perfex_constants_helper.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/helpers/perfex_constants_helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76947707">
-              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.41622198">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -172,11 +89,11 @@
         <option value="$PROJECT_DIR$/application/views/themes/semite/views/dashboard.php" />
         <option value="$PROJECT_DIR$/application/controllers/Clients.php" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/application/helpers/perfex_constants_helper.php" />
         <option value="$PROJECT_DIR$/application/views/themes/semite/views/transaction.php" />
         <option value="$PROJECT_DIR$/application/controllers/Transactions.php" />
         <option value="$PROJECT_DIR$/application/controllers/Terminal.php" />
         <option value="$PROJECT_DIR$/application/views/themes/semite/template_parts/transaction_home_chart.php" />
+        <option value="$PROJECT_DIR$/application/helpers/perfex_constants_helper.php" />
       </list>
     </option>
   </component>
@@ -267,115 +184,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="semite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="semite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="semite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template_parts" />
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -864,14 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_constants_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41622198">
-          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/themes/semite/views/transaction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38527215">
@@ -922,6 +723,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76947707">
           <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/perfex_constants_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41622198">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
           <folding />
         </state>
       </provider>
