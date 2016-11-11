@@ -54,7 +54,7 @@ class Transactions extends Clients_controller
                         'amount'=>format_money($transaction['settlement'],$this->currency->getNameById($client->default_currency)),
                         'status'=>format_trx_status($transaction['status']),
                         '3ds'=>($transaction['enrolled'] ? ' <i class="text-success fa fa-lock"></i>' : ' <i class="text-warning fa fa-unlock"></i>'),
-                        'date_added'=>date('m/d/Y',strtotime($transaction['date_added'])),
+                        'date_added'=>$transaction['date_added'],
                     );
                 }
             }

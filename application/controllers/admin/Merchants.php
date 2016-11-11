@@ -335,7 +335,7 @@ class Merchants extends Admin_controller
                     'type'=>($transaction['type'] ? $transaction['type'] : 'N/A'),
                     'settlement'=>format_money($transaction['settlement'],'USD'),
                     'status'=>format_trx_status($transaction['status']),
-                    'date_added'=>date('m/d/Y',strtotime($transaction['date_added'])),
+                    'date_added'=>$transaction['date_added'],
                 );
 
             }

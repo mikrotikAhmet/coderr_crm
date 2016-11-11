@@ -97,6 +97,19 @@
                     </label>
                 </div>
             </fieldset>
+            <fieldset>
+                <legend>3D-Secure Settings</legend>
+                <div class="checkbox checkbox-primary">
+                    <input name="processor_data[secure]" type="checkbox" value="1">
+                    <label>
+                        Enable 3D-Secure
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="processor-3ds">3D-Secure MID</label>
+                    <input type="text" name="processor_data[secure_id]" id="processor-secure_id" class="form-control" value=""/>
+                </div>
+            </fieldset>
         </div>
         <div class="col-md-2">
             <fieldset>

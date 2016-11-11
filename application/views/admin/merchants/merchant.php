@@ -71,12 +71,6 @@ $percent_acceptance = ($total_transactions > 0 ? number_format(($total_approved 
                                                 </li>
                                                 <?php if (isset($merchant)) { ?>
                                                     <li role="presentation" class="">
-                                                        <a href="#3dsecure_settings" aria-controls="3dsecure_settings" role="tab"
-                                                           data-toggle="tab">
-                                                            3D-Secure Settings
-                                                        </a>
-                                                    </li>
-                                                    <li role="presentation" class="">
                                                         <a href="#merchant_transactions" aria-controls="merchant_transactions" role="tab"
                                                            data-toggle="tab">
                                                             Transactions
@@ -161,6 +155,9 @@ $percent_acceptance = ($total_transactions > 0 ? number_format(($total_approved 
 
                                                         </div>
                                                     </div>
+                                                    <button type="submit" class="btn btn-primary mtop20">
+                                                        <?php echo _l('submit'); ?>
+                                                    </button>
                                                 </div>
                                                 <div role="tabpanel" class="tab-pane ptop10" id="merchant_transactions">
                                                     <div class="row">
@@ -225,18 +222,6 @@ $percent_acceptance = ($total_transactions > 0 ? number_format(($total_approved 
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div role="tabpanel" class="tab-pane ptop10" id="3dsecure_settings">
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary mtop20">
-                                                    <?php echo _l('submit'); ?>
-                                                </button>
                                             </div>
                                         </div>
                                         <?php echo form_close(); ?>
@@ -507,6 +492,14 @@ $percent_acceptance = ($total_transactions > 0 ? number_format(($total_approved 
 
                     if (json.processor_data.use_original){
                         $('#merchant_processor_modal input[name="processor_data[use_original]"][value='+json.processor_data.use_original+']').attr("checked",true);
+                    }
+
+                    if (json.processor_data.secure){
+                        $('#merchant_processor_modal input[name="processor_data[secure]"][value='+json.processor_data.secure+']').attr("checked",true);
+                    }
+
+                    if (json.processor_data.secure_id){
+                        $('#merchant_processor_modal input[name="processor_data[secure_id]"]').val(json.processor_data.secure_id);
                     }
 
                     if (json.processor_data.memberId){

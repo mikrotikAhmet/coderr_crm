@@ -49,11 +49,11 @@
         <div class="panel_s">
             <div class="panel-body">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <canvas id="transaction-home-chart" class="animated fadeIn"></canvas>
                     </div>
                     <div class="col-md-6">
-                        <?php //get_template_part('quick_info');?>
+                        <?php get_template_part('quick_info');?>
                     </div>
                 </div>
             </div>
