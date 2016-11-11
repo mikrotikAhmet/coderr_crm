@@ -49,12 +49,12 @@ class Transactions extends Clients_controller
                     $json['data'][] = array(
                         'transactionid'=>$transaction['transactionid'],
                         'type'=>$transaction['method'],
-                        'cardMask'=>$transaction['card'],
-                        'cardType'=>$transaction['type'],
+                        'cardMask'=>($transaction['card'] ? $transaction['card'] : 'REF:'.$transaction['referenceid']),
+                        'cardType'=>($transaction['type'] ? $transaction['type'] : 'REF:'.$transaction['referenceid']),
                         'amount'=>format_money($transaction['settlement'],$this->currency->getNameById($client->default_currency)),
                         'status'=>format_trx_status($transaction['status']),
                         '3ds'=>($transaction['enrolled'] ? ' <i class="text-success fa fa-lock"></i>' : ' <i class="text-warning fa fa-unlock"></i>'),
-                        'date_added'=>$transaction['date_added'],
+                        'date_added'=>date('m/d/Y His',strtotime($transaction['date_added'])),
                     );
                 }
             }

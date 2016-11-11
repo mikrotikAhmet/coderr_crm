@@ -440,7 +440,7 @@ $(document).ready(function() {
 			{ 'data': 'status' },
 			{ 'data': '3ds' },
 		],
-		'order': [[1, 'desc']]
+		'order': [[2, 'desc']]
 	});
 
 	// Add event listener for opening and closing details
@@ -524,7 +524,7 @@ $(document).ready(function() {
 			{ 'data': 'status' },
 			{ 'data': '3ds' },
 		],
-		'order': [[1, 'desc']]
+		'order': [[2, 'desc']]
 	});
 
 	$('#min, #max').change( function() {

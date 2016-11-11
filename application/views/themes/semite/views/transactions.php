@@ -1,4 +1,4 @@
-<div class="col-md-3">
+<div class="col-md-2">
     <div class="panel_s">
         <div class="panel-heading">
             Filter Transactions
@@ -32,12 +32,14 @@
                     <option value="Declined">Declined</option>
                 </select>
             </div>
-            <button type="button" class="btn btn-primary btn-sm reset-filter">Reset Filter</button>
-            <button type="button" class="btn btn-default btn-sm refresh-data pull-right">Reload</button>
+            <div class="row">
+                <div class="col-md-6"><button type="button" class="btn btn-primary btn-sm reset-filter">Reset</button></div>
+                <div class="col-md-6"><button type="button" class="btn btn-default btn-sm refresh-data pull-right">Reload</button></div>
+            </div>
         </div>
     </div>
 </div>
-<div class="col-md-9">
+<div class="col-md-10">
     <div class="panel_s">
         <div class="panel-body">
             <?php if (!$transactions) { ?>
