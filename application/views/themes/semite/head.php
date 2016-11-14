@@ -38,6 +38,7 @@
       <![endif]-->
       <script>
         var site_url = '<?php echo site_url(); ?>';
+        var processor_url = 'http://testprocessor.macropay.io/';
         // Settings required for javascript
         var maximum_allowed_ticket_attachments = '<?php echo get_option("maximum_allowed_ticket_attachments"); ?>';
         var ticket_attachments_file_extension = '<?php echo get_option("ticket_attachments_file_extensions"); ?>';

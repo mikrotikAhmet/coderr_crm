@@ -9,7 +9,7 @@ class Terminal extends Clients_controller
     {
         parent::__construct();
         $this->form_validation->set_error_delimiters('<div class="alert alert-danger alert-validation">', '</div>');
-
+        $this->load->helper('credit_card_validator');
     }
 
     public function index(){
@@ -21,7 +21,14 @@ class Terminal extends Clients_controller
         $this->db->where('userid',get_client_user_id());
         $merchant = $this->db->get('tblmerchants')->row();
 
+        $this->db->where('merchantid',$merchant->id);
+        $this->db->where('active',1);
+        $merchantProcessorData = $this->db->get('tblmerchantprocessors')->row();
+
+        $merchantProcessor = json_decode($merchantProcessorData->processor_data);
+
         $data['merchant'] = $merchant;
+        $data['merchantProcessor'] = $merchantProcessor;
 
         $data['title'] = get_option('companyname').'- Virtual Terminal';
         $this->data    = $data;
@@ -47,31 +54,25 @@ class Terminal extends Clients_controller
 
             $post_string = '<?xml version="1.0" encoding="UTF-8"?>
 <request>
-   <authentication>
-      <api_id>'.$merchant->api_id.'</api_id>
-      <secret_key>'.$merchant->secret_key.'</secret_key>
-   </authentication>
-   <type>'.$postData['type'].'</type>
-   <processor>'.$merchant->default_processor.'</processor>
+  <memberId>'.$merchant->api_id.'</memberId>
+  <memberGuid>'.$merchant->secret_key.'</memberGuid>
+  <method>'.$postData['method'].'</method>
   <countryId>'.$postData['countryId'].'</countryId>
- <amount>'.$postData['amount'].'</amount>
- <currencyId>'.$postData['currencyId'].'</currencyId>
- <trackingMemberCode>'.$postData['trackingMemberCode'].'</trackingMemberCode>
- <creditCard>
- <cardNumber>'.$postData['creditCard']['cardNumber'].'</cardNumber>
- <cardholder>'.(isset($postData['creditCard']['cardholder']) ? $postData['creditCard']['cardholder'] : null).'</cardholder>
- <cardExpiryMonth>'.$postData['creditCard']['cardExpiryMonth'].'</cardExpiryMonth>
- <cardExpiryYear>'.$postData['creditCard']['cardExpiryYear'].'</cardExpiryYear>
- <cardCvv>'.$postData['creditCard']['cardCvv'].'</cardCvv>
- </creditCard>
- <merchantAccountType>1</merchantAccountType>
- <dbaName></dbaName>
- <dbaCity></dbaCity>
- <avsAddress></avsAddress>
- <avsZip></avsZip>
- <additionalInfo>'.json_encode($postData['additionalInfo']).'</additionalInfo>
+  <amount>'.$postData['amount'].'</amount>
+  <currencyId>'.$postData['currencyId'].'</currencyId>
+  <trackingMemberCode>'.$postData['trackingMemberCode'].'</trackingMemberCode>
+  <cardNumber>'.$postData['creditCard']['cardNumber'].'</cardNumber>
+  <cardholder>'.(isset($postData['creditCard']['cardholder']) ? $postData['creditCard']['cardholder'] : null).'</cardholder>
+  <cardExpiryMonth>'.$postData['creditCard']['cardExpiryMonth'].'</cardExpiryMonth>
+  <cardExpiryYear>'.$postData['creditCard']['cardExpiryYear'].'</cardExpiryYear>
+  <cardCvv>'.$postData['creditCard']['cardCvv'].'</cardCvv>
+  <merchantAccountType>1</merchantAccountType>
+  <dbaName></dbaName>
+  <dbaCity></dbaCity>
+  <avsAddress></avsAddress>
+  <avsZip></avsZip>
+  <additionalInfo>'.json_encode($postData['additionalInfo']).'</additionalInfo>
 </request>';
-
                 $postfields = $post_string;
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
@@ -85,24 +86,18 @@ class Terminal extends Clients_controller
 
                 if(curl_errno($ch))
                 {
-                    echo curl_error($ch);
+                    curl_error($ch);
                 }
                 else
                 {
                     curl_close($ch);
-                    $response = $arrayToXml->toArray($res);
+                    echo $res;
+                    die();
                 }
-
-
-            $json['response_code'] = (isset($response['error']) ? $response['error'] : $response['response_code']);
-            $json['transaction_id'] = (isset($response['TransactionId']) ? $response['TransactionId'] : date('YmdHis'));
-
-            echo json_encode($json);
-            die();
         }
     }
 
-    public function threeds_process(){
+    public function secure_process(){
 
         if ($this->input->is_ajax_request()) {
             $json = array();
@@ -112,39 +107,33 @@ class Terminal extends Clients_controller
 
             $postData = $this->input->post();
 
-            $arrayToXml = new ArrayToXML();
-
             if ($merchant->live_mode) {
                 $url = _LIVE_URL;
             } else {
                 $url = _TEST_URL;
             }
 
+
             $post_string = '<?xml version="1.0" encoding="UTF-8"?>
 <request>
-   <authentication>
-      <api_id>'.$merchant->api_id.'</api_id>
-      <secret_key>'.$merchant->secret_key.'</secret_key>
-   </authentication>
-   <type>CheckEnrollment</type>
-   <processor>'.$merchant->default_processor.'</processor>
+  <memberId>'.$merchant->api_id.'</memberId>
+  <memberGuid>'.$merchant->secret_key.'</memberGuid>
+  <method>CheckEnrollment</method>
   <countryId>'.$postData['countryId'].'</countryId>
- <amount>'.$postData['amount'].'</amount>
- <currencyId>'.$postData['currencyId'].'</currencyId>
- <trackingMemberCode>'.$postData['trackingMemberCode'].'</trackingMemberCode>
- <creditCard>
- <cardNumber>'.$postData['creditCard']['cardNumber'].'</cardNumber>
- <cardholder>'.(isset($postData['creditCard']['cardHolder']) ? $postData['creditCard']['cardHolder'] : null).'</cardholder>
- <cardExpiryMonth>'.$postData['creditCard']['cardExpiryMonth'].'</cardExpiryMonth>
- <cardExpiryYear>'.$postData['creditCard']['cardExpiryYear'].'</cardExpiryYear>
- <cardCvv>'.$postData['creditCard']['cardCvv'].'</cardCvv>
- </creditCard>
- <merchantAccountType>1</merchantAccountType>
- <dbaName></dbaName>
- <dbaCity></dbaCity>
- <avsAddress></avsAddress>
- <avsZip></avsZip>
- <additionalInfo>'.json_encode($postData['additionalInfo']).'</additionalInfo>
+  <amount>'.$postData['amount'].'</amount>
+  <currencyId>'.$postData['currencyId'].'</currencyId>
+  <trackingMemberCode>'.$postData['trackingMemberCode'].'</trackingMemberCode>
+  <cardNumber>'.$postData['creditCard']['cardNumber'].'</cardNumber>
+  <cardholder>'.(isset($postData['creditCard']['cardholder']) ? $postData['creditCard']['cardholder'] : null).'</cardholder>
+  <cardExpiryMonth>'.$postData['creditCard']['cardExpiryMonth'].'</cardExpiryMonth>
+  <cardExpiryYear>'.$postData['creditCard']['cardExpiryYear'].'</cardExpiryYear>
+  <cardCvv>'.$postData['creditCard']['cardCvv'].'</cardCvv>
+  <merchantAccountType>1</merchantAccountType>
+  <dbaName></dbaName>
+  <dbaCity></dbaCity>
+  <avsAddress></avsAddress>
+  <avsZip></avsZip>
+  <additionalInfo>'.json_encode($postData['additionalInfo']).'</additionalInfo>
 </request>';
 
             $postfields = $post_string;
@@ -165,12 +154,9 @@ class Terminal extends Clients_controller
             else
             {
                 curl_close($ch);
-                $response = $arrayToXml->toArray($res);
+                echo $res;
             }
 
-            $json = $response;
-
-            echo json_encode($json);
             die();
         }
 
@@ -197,102 +183,85 @@ class Terminal extends Clients_controller
 
     }
 
-    public function result($response_code,$transaction_id,$threeds = 0){
+    public function result($transaction_id,$secure = 0){
 
 
-        if ($this->input->is_ajax_request() && !$threeds) {
+        $this->db->where('transactionid',$transaction_id);
+        $transaction = $this->db->get('tbltransactions')->row();
 
-            if ($response_code == 1){
 
-                $this->db->where('transactionid',$transaction_id);
-                $transaction = $this->db->get('tbltransactions')->row();
+        $this->db->where('transactionid',$transaction->id);
+        $this->db->where('type','response');
+        $webhookResponse = $this->db->get('tblwebhooks')->row();
 
-                $data['transaction'] = $transaction;
-                $data['additionalInfo'] = json_decode($transaction->additionalInfo);
+        $hookdataResponse = (array) json_decode($webhookResponse->hookdata);
+
+        $this->db->where('transactionid',$transaction->id);
+        $this->db->where('type','request');
+        $webhookRequest = $this->db->get('tblwebhooks')->row();
+
+        $hookdataRequest = (array) json_decode($webhookRequest->hookdata);
+
+        $data['webhookresponse'] = $hookdataResponse;
+        $data['webhookrequest'] = $hookdataRequest;
+
+        $data['secure'] = $secure;
+
+        if ($this->input->is_ajax_request() && !$secure){
+
+            if ($transaction->status == 0){
 
                 $this->load->view('themes/semite/views/success', $data, false);
+            }
 
-            } elseif ($response_code == 2) {
+            if ($transaction->status == 1){
 
-                $this->db->where('transactionid',$transaction_id);
-                $transactionAuthorization = $this->db->get('tbltransactionauthorization')->row();
+                if (isset($hookdataResponse['Cdc']->ErrorMessage)){ // Payvision
 
-                $cdc = json_decode($transactionAuthorization->response);
-
-                if (isset($cdc->result_cdc_data->ErrorMessage)){
-
-                    $data['reason'] = $cdc->result_cdc_data->ErrorMessage;
-
-                } elseif (isset($cdc->result_cdc_data->Result->ResultDetail)){
-
-                    $data['reason'] = $cdc->result_cdc_data->Result->ResultDetail;
+                    $data['reason'] =$hookdataResponse['Cdc']->ErrorMessage;
+                } else if ($hookdataResponse['Cdc']->PROCESSING_RETURN){ // Noirepay
+                    $data['reason'] = $hookdataResponse['Cdc']->PROCESSING_RETURN;
                 }
-
-                $this->load->view('themes/semite/views/failed', $data, false);
-            } else {
-
-                $data['reason'] = $this->response->Error($response_code);
 
                 $this->load->view('themes/semite/views/failed', $data, false);
             }
 
-        } elseif (!$this->input->is_ajax_request() && $threeds) {
+        } elseif (!$this->input->is_ajax_request()) {
 
-
-            $data['threeds'] = $threeds;
-
-            if ($response_code == 1){
-
-                $this->db->where('transactionid',$transaction_id);
-                $transaction = $this->db->get('tbltransactions')->row();
-
-                $data['transaction'] = $transaction;
-                $data['additionalInfo'] = json_decode($transaction->additionalInfo);
+            if ($transaction->status == 0){
 
                 $data['title'] = get_option('companyname').'- Virtual Terminal';
                 $this->data    = $data;
                 $this->view    = 'success';
                 $this->layout();
+            }
 
-            } elseif ($response_code == 2) {
-
-                if ($transaction_id != '3dsfail') {
-
-                    $this->db->where('transactionid', $transaction_id);
-                    $transactionAuthorization = $this->db->get('tbltransactionauthorization')->row();
-
-                    $cdc = json_decode($transactionAuthorization->response);
-
-                    if (isset($cdc->result_cdc_data->ErrorMessage)) {
-
-                        $data['reason'] = $cdc->result_cdc_data->ErrorMessage;
-
-                        $data['title'] = get_option('companyname').'- Virtual Terminal';
-                        $this->data    = $data;
-                        $this->view    = 'failed';
-                        $this->layout();
-                    }
-                } else {
-
-                    $data['reason'] = '3D-Secure Authentication Failed!';
-
-                    $data['title'] = get_option('companyname').'- Virtual Terminal';
-                    $this->data    = $data;
-                    $this->view    = 'failed';
-                    $this->layout();
-                }
-            } else {
-
-                    $data['reason'] = $this->response->Error($response_code);
+            if ($transaction->status == 1){
 
                 $data['title'] = get_option('companyname').'- Virtual Terminal';
                 $this->data    = $data;
                 $this->view    = 'failed';
                 $this->layout();
-
             }
 
         }
+    }
+
+    public function failedauthentication($secure){
+
+
+        $data['webhookresponse']['SemiteId'] = '00000000';
+        $data['webhookresponse']['SemiteGuid'] = '00000000-0000-0000-0000-00000000000';
+        $data['webhookrequest']['TrackingMemberCode'] = 'N/A';
+
+        $data['reason'] = '3D-Secure Authentication failed!';
+
+        $data['secure'] = $secure;
+
+        $data['title'] = get_option('companyname').'- Virtual Terminal';
+        $this->data    = $data;
+        $this->view    = 'failed';
+        $this->layout();
 
     }
 

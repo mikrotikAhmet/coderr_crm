@@ -9,9 +9,9 @@
             <div class="panel-body">
                 <div class="alert alert-danger alert-validation" id="general-error" style="display: none"></div>
                 <?php echo form_open($this->uri->uri_string().'/process', array('class' => 'terminal-form')); ?>
-                <input type="hidden" value="<?php echo $merchant->threeds_mode?>" name="threeds"/>
+                <input type="hidden" value="<?php echo $merchantProcessor->secure?>" name="secure"/>
                 <input type="hidden" value="<?php echo $merchant->id?>" name="merchant_id"/>
-                <?php if ($merchant->threeds_mode) { ?>
+                <?php if ($merchantProcessor->secure) { ?>
 
                 <div class="pull-right">
                     <img src="<?php echo template_assets_url(); ?>images/3ds.jpg" style="width : 50px">
@@ -26,10 +26,10 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="control-label" for="input-method">Choose your transaction type</label>
-                                    <select name="type" id="type" class="form-control">
-                                        <option value="Charge">Charge Method</option>
-                                        <option value="Authorize">Authorize Method</option>
-                                        <option value="Payment">Payment Method</option>
+                                    <select name="method" id="method" class="form-control">
+                                        <option value="payment">Payment Method</option>
+                                        <option value="authorize">Authorize Method</option>
+<!--                                        <option value="Payment">Payment Method</option>-->
                                     </select>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@
                             <select name="countryId" id="countryId" class="form-control">
                                 <option value=""></option>
                                 <?php foreach (get_all_countries() as $country) { ?>
-                                    <option value="<?php echo $country['numcode']?>"><?php echo $country['short_name']?></option>
+                                    <option value="<?php echo $country['iso3']?>"><?php echo $country['short_name']?></option>
                                 <?php } ?>
                             </select>
                             <div class="alert alert-danger alert-validation" style="display: none">Please select Country.</div>
@@ -81,7 +81,7 @@
                             <select name="currencyId" id="currencyId" class="form-control" data-live-search="true">
                                 <option value=""></option>
                                 <?php foreach (Translator::getCurrencies() as $key=>$currency) { ?>
-                                    <option value="<?php echo $currency?>"><?php echo $key?></option>
+                                    <option value="<?php echo $key?>"><?php echo $key?></option>
                                 <?php } ?>
                             </select>
                             <div class="alert alert-danger alert-validation" style="display: none">Please select Currency.</div>
@@ -123,7 +123,7 @@
                 <div style="text-align: center">
                     <button type="button" id="proccess" class="btn btn-success">Process Transaction</button>
                 </div>
-                <?php if ($merchant->threeds_mode) { ?>
+                <?php if ($merchantProcessor->secure) { ?>
                 <hr/>
                 <h4>(*) BY CLICKING "SUBMIT" YOU AGREE TO OUR TERMS AND CONDITIONS, ESPECIALLY THOSE OUTLINED BELOW:</h4>
                 <span class="text-muted">

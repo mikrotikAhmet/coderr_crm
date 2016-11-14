@@ -74,7 +74,7 @@ $('#proccess').on('click',function(){
 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	var isValidMoney = /^\d{0,4}(\.\d{0,2})?$/.test(amount.val());
 	var method = $('select[name=\'method\']');
-	var threeds = $('input[name=\'threeds\']');
+	var secure = $('input[name=\'secure\']');
 
 	if (cardnumber.val() == ""){
 		error = true;
@@ -175,8 +175,8 @@ $('#proccess').on('click',function(){
 
 	var process_url = site_url + 'terminal/process';
 
-	if (threeds.val() == 1) {
-		process_url = site_url + 'terminal/threeds_process'
+	if (secure.val() == 1) {
+		process_url = site_url + 'terminal/secure_process';
 
 
 		setTimeout(function () {
@@ -209,7 +209,7 @@ $('#proccess').on('click',function(){
 						html += '<button type="submit">Process 3D-Secure Manually</button>';
 						html += '<form name="Payer" id="Payer" method="post" action="' + json.url + '">';
 						html += '<input type="hidden" name="PaReq" value="' + json.pareq + '" />';
-						html += '<input type="hidden" name="TermUrl" value="' + 'http://processor.semitepayment.io/authentication' + '" />';
+						html += '<input type="hidden" name="TermUrl" value="' + processor_url+'authentication' + '" />';
 						html += '<input type="hidden" name="MD" value="' + data + '" />';
 						html += '</form>';
 						html += '</html>';
@@ -234,7 +234,7 @@ $('#proccess').on('click',function(){
 						},
 						success: function (json) {
 							$('.loading').hide();
-							$('.panel-body').load(site_url + 'terminal/result/' + json.response_code + '/' + json.transaction_id);
+							$('.panel-body').load(site_url + 'terminal/result/' + json.TransactionId +'/' + secure.val());
 
 						}
 					});
@@ -259,7 +259,7 @@ $('#proccess').on('click',function(){
 				},
 				success: function (json) {
 					$('.loading').hide();
-					$('.panel-body').load(site_url + 'terminal/result/' + json.response_code + '/' + json.transaction_id);
+					$('.panel-body').load(site_url + 'terminal/result/' + json.TransactionId+'/'+secure.val());
 
 				}
 			});

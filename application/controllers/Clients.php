@@ -1225,10 +1225,10 @@ public function client_email_exists($email = '')
                 $this->db->where('merchantid', $merchatid);
                 $this->db->where('status', $status);
 
-//                $by_currency = $this->input->post('report_currency');
-//                if ($by_currency) {
-//                    $this->db->where('currency', $by_currency);
-//                }
+                $by_currency = $this->input->post('report_currency');
+                if ($by_currency) {
+                    $this->db->where('currency', $by_currency);
+                }
 
                 $payments = $this->db->get()->result_array();
 

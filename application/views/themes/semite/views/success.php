@@ -1,4 +1,4 @@
-<?php if ($threeds) { ?>
+<?php if ($secure) { ?>
     <div class="panel_s">
     <div class="panel-heading">
         Merchant Dashboard
@@ -10,13 +10,14 @@
     <h1 class="text-success">Your Payment has been succesfully processed!!</h1>
 </div>
 <h4>Dear Customer</h4>
-<p>Your Order number is : <b><?php echo $transaction->trackingCode?></b></p>
-<p>You will receive email confirmation shortly to : <b><?php echo $additionalInfo->email?></b></p>
+<p>Your Transaction ID is : <b><?php echo $webhookresponse['SemiteId']?></b></p>
+    <p>Your Transaction GUID is : <b><?php echo $webhookresponse['SemiteGuid']?></b></p>
+    <p>Customer Tracking code is : <b><?php echo $webhookrequest['trackingMemberCode']?></b></p>
 <p>Thank you!</p>
 <div style="text-align: center">
     <a href="<?php echo site_url()?>terminal" class="btn btn-primary">Back to Virtual Terminal</a>
 </div>
-<?php if ($threeds) { ?>
+<?php if ($secure) { ?>
     </div>
     </div>
 <?php } ?>

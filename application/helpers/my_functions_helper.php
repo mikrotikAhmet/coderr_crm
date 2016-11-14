@@ -82,10 +82,10 @@ function format_trx_status($status, $classes = '', $label = true)
  */
 function format_transaction_status($status, $classes = '', $label = true)
 {
-    if ($status == 1) {
+    if ($status == 0) {
         $status      = 'Approved';
         $label_class = 'success';
-    } else if ($status == 2) {
+    } else if ($status == 1) {
         $status      = 'Declined';
         $label_class = 'warning';
     } else {

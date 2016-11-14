@@ -560,13 +560,13 @@ function get_formatted_revenue($total_revenue){
     $revenue = 0;
 
     if ($total_revenue > 1000000000000) {
-        $revenue = format_money($total_revenue / 1000000000000, 1) . 'T';
+        $revenue = round($total_revenue / 1000000000000, 1) . 'T';
     } elseif ($total_revenue > 1000000000) {
-        $revenue = format_money($total_revenue / 1000000000, 1) . 'B';
+        $revenue = round($total_revenue / 1000000000, 1) . 'B';
     } elseif ($total_revenue > 1000000) {
-        $revenue = format_money($total_revenue / 1000000, 1) . 'M';
+        $revenue = round($total_revenue / 1000000, 1) . 'M';
     } elseif ($total_revenue > 1000) {
-        $revenue = format_money($total_revenue / 1000, 1) . 'K';
+        $revenue = round($total_revenue / 1000, 1) . 'K';
     } else {
         $revenue = format_money($total_revenue);
     }
